@@ -5,7 +5,7 @@ class AttrAccessor
           return priv[varName]
         else
           priv[varName] = arg
-          return "Variable changed to #{priv[varName]}"          
+          return priv[varName]          
       varNames = []
       for key of priv
         varNames.push key
