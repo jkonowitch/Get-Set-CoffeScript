@@ -16,10 +16,10 @@ class AttrAccessor
 
 class Document extends AttrAccessor
   constructor: (title, author, size) ->
-      priv = title: title, author: author, size: size
+      priv = title: title, author: author, content: content
       super priv
       
-a = new Document('Why I love computers', 'Jeff', 128)
+a = new Document('Why I love computers', 'Jeff', 'Because they are so much fun!')
 
 console.log a.title()
 console.log a.title("Why I REALLY love computers")
