@@ -12,4 +12,4 @@ class AttrAccessor
       self = @
       varNames.forEach( (key) ->
           self["#{key}"] = (arg) -> get_set("#{key}", arg)
-        , self)
+      , self)
