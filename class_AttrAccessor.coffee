@@ -13,14 +13,3 @@ class AttrAccessor
       varNames.forEach( (key) ->
           self["#{key}"] = (arg) -> get_set("#{key}", arg)
         , self)
-
-class Document extends AttrAccessor
-  constructor: (title, author, size) ->
-      priv = title: title, author: author, content: content
-      super priv
-      
-a = new Document('Why I love computers', 'Jeff', 'Because they are so much fun!')
-
-console.log a.title()
-console.log a.title("Why I REALLY love computers")
-console.log a.title()
